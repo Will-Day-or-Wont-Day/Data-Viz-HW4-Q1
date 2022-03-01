@@ -290,14 +290,14 @@
 
         stacked
             .selectAll("path")
-            .data(series_2020)
+            .data(series_2009)
             .join("path")
             .attr("class", "stack")
             .attr("fill", d => color(d.key))
             .attr("d", area)
 
         var labs = svg.selectAll(".labels")
-            .data(labels_2020)
+            .data(labels_2009)
             .enter().append("g");
 
         labs.append("text")
